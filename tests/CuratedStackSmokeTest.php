@@ -12,7 +12,7 @@ use ReflectionClass;
 
 final class CuratedStackSmokeTest extends TestCase
 {
-    public function testSqlFormatterRewritesKeywordCase(): void
+    public function testSqlFormatterCompressesAndFormatsSql(): void
     {
         $formatter = new SqlFormatter();
 

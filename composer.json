@@ -22,7 +22,12 @@
     },
     "config": {
         "audit": {
-            "block-insecure": false
+            "ignore": {
+                "twig/twig": {
+                    "apply": "block",
+                    "reason": "PHP 7.4 compatibility requires a Twig version whose security fixes require PHP 8.1."
+                }
+            }
         }
     }
 }
